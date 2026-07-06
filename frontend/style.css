@@ -173,12 +173,12 @@ body{
     flex-direction:column;
 
 
-    background:rgba(20,20,25,.08);
+    background:rgba(20,20,25,.03);
 
 
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(8px);
 
-    -webkit-backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(8px);
 
 
     border:1px solid rgba(255,255,255,.10);
