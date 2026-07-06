@@ -11,7 +11,9 @@ function addMessage(text, type) {
     div.textContent = text;
 
     chat.appendChild(div);
+    setTimeout(() => {
     chat.scrollTop = chat.scrollHeight;
+}, 50);
 }
 
 async function sendMessage() {
