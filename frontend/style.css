@@ -8,7 +8,9 @@
 
 html, body{
     height:100%;
+    overflow:hidden;
 }
+
 
 body{
 
@@ -16,13 +18,16 @@ body{
 
     height:100vh;
 
-    color:white;
+    display:flex;
 
-    overflow:hidden;
+    flex-direction:column;
+
+    color:white;
 
     background:#0b0b10;
 
 }
+
 
 
 /* =========================
@@ -102,8 +107,9 @@ body{
    LOGO
 ========================= */
 
-
 .logo{
+
+    flex-shrink:0;
 
     height:120px;
 
@@ -153,7 +159,10 @@ body{
 
     max-width:94%;
 
-    height:calc(100vh - 160px);
+
+    flex:1;
+
+    min-height:0;
 
 
     margin:0 auto 30px;
@@ -199,7 +208,10 @@ main{
 
     min-height:0;
 
+
     overflow-y:auto;
+
+    overflow-x:hidden;
 
 
     padding:20px;
@@ -251,7 +263,8 @@ main::-webkit-scrollbar-thumb{
 
     line-height:1.5;
 
-    word-wrap:break-word;
+
+    word-break:break-word;
 
     white-space:pre-wrap;
 
